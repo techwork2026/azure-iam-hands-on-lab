@@ -75,3 +75,16 @@ Lifecycle actions completed:
 - Restored intern account
 
 Status: Completed
+# IAM Lab 01 — User Lifecycle
+
+## Users Created
+![Users Created](screenshots/users-created.png)
+
+## User Disabled
+![User Disabled](screenshots/user-disabled.png)
+
+## User Deleted
+![User Deleted](screenshots/user-deleted.png)
+
+## User Restored
+![User Restored](screenshots/user-restored.png)
