@@ -14,7 +14,7 @@ This repo demonstrates user lifecycle, RBAC, groups, and MFA through documented 
 
 ### Lab 01 — User Lifecycle Management
 
-[View Lab](labs/lab-01-user-management.md)
+[View Lab](labs/01-User-Lifecycle/lab-01-user-management.md)
 
 Simulates onboarding and offboarding:
 
