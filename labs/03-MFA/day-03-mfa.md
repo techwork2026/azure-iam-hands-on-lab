@@ -53,6 +53,6 @@ This highlights the importance of both MFA and Conditional Access working togeth
 
 ## Outcome
 
-Validated MFA configuration options and identified limitations due to licensing restrictions.
+Validated MFA configuration options and confirmed that Conditional Access policies were unavailable due to licensing limitations.
 
-Confirmed that while MFA methods are available, Conditional Access policies cannot be enforced in this environment.
+This highlights how security capabilities in Microsoft Entra ID depend on licensing tiers.
