@@ -33,7 +33,11 @@ Password successfully reset and user prompted to update credentials on next logi
 
 **Findings:**
 - Account was enabled and accessible  
-- No authentication methods configured, which may impact MFA prompts  
+- No authentication methods configured, which may impact MFA prompts
+
+**Root Cause Analysis:**
+
+The issue was likely caused by missing authentication methods, preventing proper MFA or authentication flow completion.
 
 **Outcome:**  
 Identified potential MFA configuration issue affecting login experience.
@@ -50,7 +54,11 @@ Identified potential MFA configuration issue affecting login experience.
 **Actions performed:**
 - Simulated issue by disabling user account  
 - Verified account status showed disabled  
-- Re-enabled account to restore access  
+- Re-enabled account to restore access
+
+**Root Cause Analysis:**
+
+The login issue was caused by the account being disabled, which blocks all authentication attempts regardless of correct credentials.
 
 **Outcome:**  
 User account access successfully restored.
@@ -59,11 +67,16 @@ User account access successfully restored.
 ![Account Re-enabled](../../screenshots/account-reenabled.png)
 ---
 
-### Key Takeaway
+## Key Takeaway
 
-This lab demonstrates real-world IAM troubleshooting workflows including credential resets, account status verification, and resolving access issues.
+Troubleshooting IAM issues requires verifying:
 
-These tasks reflect common responsibilities in IAM and help desk roles, emphasizing structured problem-solving and security awareness.
+- Account status (enabled/disabled)
+- Credential validity (password reset)
+- Authentication methods (MFA configuration)
+- Access policies
+
+Even simple misconfigurations can prevent user access, making systematic troubleshooting critical in IAM operations.
 
 ---
 
