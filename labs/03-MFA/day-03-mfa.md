@@ -1,7 +1,10 @@
 ## Day 3 — MFA and Conditional Access
 
 ### Objective
-Today I explored multi-factor authentication (MFA) settings in Microsoft Entra ID and checked Conditional Access availability in the lab environment.
+
+Analyze and validate Multi-Factor Authentication (MFA) configurations in Microsoft Entra ID and assess Conditional Access availability within a lab environment.
+
+This lab focuses on understanding how MFA strengthens authentication security and how licensing impacts advanced access control features.
 
 ### What I did
 - Opened Microsoft Entra admin center
@@ -11,8 +14,16 @@ Today I explored multi-factor authentication (MFA) settings in Microsoft Entra I
 - Documented limitations shown in the lab tenant
 
 ### Key Takeaway
-This lab showed how MFA settings can be reviewed and managed for users, while also confirming that some Conditional Access features may not be available depending on licensing or lab environment configuration.
-This demonstrates hands-on experience navigating Microsoft Entra ID, reviewing authentication methods, and identifying access control limitations within a lab tenant.
+
+MFA is a critical security control in IAM that helps prevent unauthorized access, even if user credentials are compromised.
+
+However, without Conditional Access, organizations cannot enforce advanced policies such as:
+
+- Location-based access restrictions
+- Device compliance enforcement
+- Risk-based authentication
+
+This highlights the importance of both MFA and Conditional Access working together to secure user access in enterprise environments.
 
 ### Skills Demonstrated
 - Identity and Access Management (IAM)
@@ -32,13 +43,10 @@ This demonstrates hands-on experience navigating Microsoft Entra ID, reviewing a
 #### MFA methods for user
 ![MFA methods for user](../../screenshots/mfa-methods-user.png)
 
-## Overall Skills Demonstrated
+### Findings
 
-- Identity and Access Management (IAM)
-- Microsoft Entra ID
-- User lifecycle management
-- Role-Based Access Control (RBAC)
-- Multi-Factor Authentication (MFA)
-- Access control analysis
-- Security best practices
-- Technical documentation
+- MFA provides an additional layer of security beyond passwords
+- Users without configured MFA methods cannot complete secure sign-in flows
+- Conditional Access is not available in this lab due to licensing limitations
+- Lack of Conditional Access reduces the ability to enforce advanced security policies (location, device compliance, risk-based access)
+- Without MFA, compromised credentials can lead to unauthorized access and potential account takeover
