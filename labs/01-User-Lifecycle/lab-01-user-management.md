@@ -170,3 +170,39 @@ Confirmed the role is active under the user account.
 - Role-Based Access Control (RBAC)
 - Administrative role assignment
 - Identity organization by department
+
+
+---
+
+# Day 3 — Conditional Access (MFA Enforcement)
+
+## Step 1 — Access Conditional Access
+
+Navigated to:
+
+Microsoft Entra ID → Security → Conditional Access
+
+Attempted to create a new policy.
+
+---
+
+## Step 2 — Policy Creation (Simulated)
+
+Due to Microsoft Entra ID Free tier limitations, Conditional Access policy creation is not available.
+
+The following policy was designed:
+
+**Policy Name:** Require MFA for All Users
+
+**Assignments:**
+- All Users
+
+**Cloud Apps:**
+- All cloud apps
+
+**Access Controls:**
+- Require Multi-Factor Authentication (MFA)
+
+This policy enforces MFA across the organization.
+
+![Conditional Access Not Available](./screenshots/conditional-access-not-available.png)
