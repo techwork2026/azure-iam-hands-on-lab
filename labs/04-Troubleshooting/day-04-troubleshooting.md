@@ -35,12 +35,12 @@ Password successfully reset and user prompted to update credentials on next logi
 - Account was enabled and accessible  
 - No authentication methods configured, which may impact MFA prompts
 
-**Root Cause Analysis:**
-
-The issue was likely caused by missing authentication methods, preventing proper MFA or authentication flow completion.
-
 **Outcome:**  
 Identified potential MFA configuration issue affecting login experience.
+
+**Root Cause Analysis:**
+
+The login issue was likely caused by missing authentication methods, preventing proper MFA or authentication flow completion after password reset.
 
 ![User Sign-In Status](../../screenshots/user-sign-in-status.png)  
 ![Authentication Methods](../../screenshots/mfa-methods-user.png)
@@ -56,30 +56,35 @@ Identified potential MFA configuration issue affecting login experience.
 - Verified account status showed disabled  
 - Re-enabled account to restore access
 
-**Root Cause Analysis:**
-
-The login issue was caused by the account being disabled, which blocks all authentication attempts regardless of correct credentials.
-
 **Outcome:**  
 User account access successfully restored.
+
+**Root Cause Analysis:**
+
+The access issue was caused by the account being disabled, which blocks all authentication attempts regardless of correct credentials.
 
 ![Account Disabled](../../screenshots/account-disabled.png)  
 ![Account Re-enabled](../../screenshots/account-reenabled.png)
 ---
 
-## Key Takeaway
+### Key Takeaway
 
-Troubleshooting IAM issues requires verifying:
+Effective IAM troubleshooting requires a structured approach that includes:
 
-- Account status (enabled/disabled)
-- Credential validity (password reset)
-- Authentication methods (MFA configuration)
-- Access policies
+- Verifying account status (enabled/disabled)
+- Validating credential changes (password reset)
+- Reviewing authentication methods (MFA)
+- Identifying configuration gaps impacting access
 
-Even simple misconfigurations can prevent user access, making systematic troubleshooting critical in IAM operations.
+Even simple misconfigurations can prevent user access, making systematic troubleshooting critical for maintaining secure and reliable identity systems.
 
 ---
+### Security Insight
 
+Improper account configuration, such as disabled accounts or missing MFA methods, can either block legitimate users or create security gaps.
+
+Ensuring proper authentication setup is essential to balance security and user accessibility.
+---
 ### Skills Demonstrated
 
 - Identity and Access Management (IAM)
