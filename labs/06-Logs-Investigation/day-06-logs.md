@@ -64,4 +64,4 @@ This lab demonstrates how sign-in logs are used to investigate authentication is
 
 Sign-in logs are critical for distinguishing between authentication failures and user behavior issues.
 
-Even when no activity is present, logs provide valuable insight that helps eliminate potential root causes and guide further troubleshooting.
+Even when no activity is present, logs provide valuable insight that helps eliminate potential root causes and guide further troubleshooting. 
