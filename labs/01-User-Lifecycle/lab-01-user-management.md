@@ -1,3 +1,17 @@
+# IAM Hands-On Lab Portfolio — Microsoft Entra ID
+
+This repository documents hands-on Identity and Access Management (IAM) labs performed using Microsoft Entra ID.
+
+The goal is to build real-world IAM experience including:
+- User lifecycle management
+- Group-based access control
+- Role-Based Access Control (RBAC)
+- Multi-Factor Authentication (MFA)
+- Conditional Access concepts
+
+Each lab simulates enterprise IAM scenarios and includes documentation with screenshots for validation.
+
+
 # Lab 01 — User Lifecycle Management
 
 ## Objective
@@ -64,6 +78,9 @@ Intern account restored from deleted users.
 
 ## Result
 
+### Real-World Application
+This lab simulates standard IAM processes used in enterprise environments, including onboarding, offboarding, and account recovery workflows.
+
 Users created:
 - New Employee
 - Contractor
@@ -123,7 +140,7 @@ Created the following security groups:
 - HR-Team
 - IT-Team
 
-![Groups Created](./screenshots/groups-created.png)
+![Groups Created](screenshots/groups-created.png)
 
 ---
 
@@ -136,13 +153,13 @@ Users were assigned to departments:
 - Samantham → IT-Team  
 
 ### Finance Team
-![Finance Team](./screenshots/finance-team-members.png)
+![Finance Team](screenshots/finance-team-members.png)
 
 ### HR Team
-![HR Team](./screenshots/hr-team-members.png)
+![HR Team](screenshots/hr-team-members.png)
 
 ### IT Team
-![IT Team](./screenshots/it-team-members.png)
+![IT Team](screenshots/it-team-members.png)
 
 ---
 
@@ -152,7 +169,7 @@ Assigned **User Administrator** role to:
 
 - ContractorJason
 
-![Role Assigned](./screenshots/role-assigned-user-admin.png)
+![Role Assigned](screenshots/role-assigned-user-admin.png)
 
 ---
 
@@ -160,8 +177,11 @@ Assigned **User Administrator** role to:
 
 Confirmed the role is active under the user account.
 
-![Role Confirmation](./screenshots/user-role-confirmation.png)
+![Role Confirmation](screenshots/user-role-confirmation.png)
 
+## Key Takeaway
+
+This lab demonstrates how RBAC ensures users only have access to what is required for their role, reducing security risk and enforcing least privilege access.
 ---
 
 ## Skills Demonstrated
@@ -173,40 +193,6 @@ Confirmed the role is active under the user account.
 
 
 ---
-
-# Day 3 — Conditional Access (MFA Enforcement)
-
-## Step 1 — Access Conditional Access
-
-Navigated to:
-
-Microsoft Entra ID → Security → Conditional Access
-
-Attempted to create a new policy.
-
----
-
-## Step 2 — Policy Creation (Simulated)
-
-Due to Microsoft Entra ID Free tier limitations, Conditional Access policy creation is not available.
-
-The following policy was designed:
-
-**Policy Name:** Require MFA for All Users
-
-**Assignments:**
-- All Users
-
-**Cloud Apps:**
-- All cloud apps
-
-**Access Controls:**
-- Require Multi-Factor Authentication (MFA)
-
-This policy enforces MFA across the organization.
-
-![Conditional Access Not Available](./screenshots/conditional-access-not-available.png)
-
 
 ## Day 3 — MFA and Conditional Access
 
@@ -241,3 +227,14 @@ This demonstrates hands-on experience navigating Microsoft Entra ID, reviewing a
 
 #### MFA methods for user
 ![MFA methods for user](screenshots/mfa-methods-user.png)
+
+## Overall Skills Demonstrated
+
+- Identity and Access Management (IAM)
+- Microsoft Entra ID
+- User lifecycle management
+- Role-Based Access Control (RBAC)
+- Multi-Factor Authentication (MFA)
+- Access control analysis
+- Security best practices
+- Technical documentation
