@@ -79,12 +79,7 @@ Effective IAM troubleshooting requires a structured approach that includes:
 Even simple misconfigurations can prevent user access, making systematic troubleshooting critical for maintaining secure and reliable identity systems.
 
 ---
-### Security Insight
 
-Improper account configuration, such as disabled accounts or missing MFA methods, can either block legitimate users or create security gaps.
-
-Ensuring proper authentication setup is essential to balance security and user accessibility.
----
 ### Skills Demonstrated
 
 - Identity and Access Management (IAM)
