@@ -21,7 +21,13 @@ Simulate real-world access issues where a user has group membership but lacks pr
 
 - User had correct group membership  
 - No roles were assigned to the user  
-- Group membership alone did not grant required permissions  
+- Group membership alone did not grant required permissions
+
+### Root Cause Analysis
+
+The issue occurred because no RBAC role was assigned to the user.
+
+While the user was correctly placed in a security group, the absence of a role assignment resulted in insufficient permissions to access the resource.
 
 ![User Group Membership](../../screenshots/user-group-membership.png)
 
@@ -51,6 +57,15 @@ Access issue resolved by applying appropriate RBAC role
 This lab demonstrates that group membership alone does not grant permissions in Microsoft Entra ID. Role-Based Access Control (RBAC) must be properly configured to provide access.
 
 Understanding the relationship between groups and roles is critical for resolving access-related issues.
+
+### Security Insight
+
+Misconfigured RBAC can lead to both access issues and security risks.
+
+- Under-permissioning prevents users from performing required tasks  
+- Over-permissioning can expose sensitive systems and data  
+
+Proper role assignment is critical to maintaining both functionality and security in IAM environments.
 
 ---
 
