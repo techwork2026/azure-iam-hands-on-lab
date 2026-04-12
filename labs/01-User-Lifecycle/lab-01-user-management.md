@@ -92,7 +92,10 @@ Lifecycle actions completed:
 - Restored intern account
 
 Status: Completed
-# IAM Lab 01 — User Lifecycle
+
+---
+
+## IAM Lab 01 — User Lifecycle
 
 ## Users Created
 ![Users Created](screenshots/users-created.png)
@@ -206,7 +209,7 @@ Today I explored multi-factor authentication (MFA) settings in Microsoft Entra I
 - Checked Conditional Access availability
 - Documented limitations shown in the lab tenant
 
-### Key takeaway
+### Key Takeaway
 This lab showed how MFA settings can be reviewed and managed for users, while also confirming that some Conditional Access features may not be available depending on licensing or lab environment configuration.
 This demonstrates hands-on experience navigating Microsoft Entra ID, reviewing authentication methods, and identifying access control limitations within a lab tenant.
 
