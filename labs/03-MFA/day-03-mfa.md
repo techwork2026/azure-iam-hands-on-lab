@@ -50,3 +50,9 @@ This highlights the importance of both MFA and Conditional Access working togeth
 - Conditional Access is not available in this lab due to licensing limitations
 - Lack of Conditional Access reduces the ability to enforce advanced security policies (location, device compliance, risk-based access)
 - Without MFA, compromised credentials can lead to unauthorized access and potential account takeover
+
+## Outcome
+
+Validated MFA configuration options and identified limitations due to licensing restrictions.
+
+Confirmed that while MFA methods are available, Conditional Access policies cannot be enforced in this environment.
