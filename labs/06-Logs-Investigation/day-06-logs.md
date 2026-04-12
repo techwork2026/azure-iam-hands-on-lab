@@ -28,18 +28,23 @@ Simulate real-world IAM investigation scenarios by reviewing user sign-in activi
 
 ### Analysis
 
-The absence of sign-in logs suggests:
-- The user has not attempted to log in recently  
-- Login attempts may have occurred outside the selected time window  
-- The issue may not be related to authentication failure  
+The absence of sign-in logs indicates that no authentication attempts were made within the selected time range.
+
+This suggests the issue is not related to failed authentication or access denial, but rather one of the following:
+
+- The user has not attempted to sign in
+- The user may be using incorrect login methods or endpoints
+- The login attempt may fall outside the selected time window
+
+Based on this data, the issue is likely user-side rather than a system or IAM configuration problem.
 
 ---
 
 ### Outcome
 
-No authentication errors identified.  
-Further troubleshooting would involve confirming user login attempts and verifying correct credentials or login process.
+No authentication failures or access issues were identified within Microsoft Entra ID.
 
+The investigation ruled out IAM-related causes and redirected troubleshooting toward user behavior, login process validation, and credential verification.
 ---
 
 ### Key Takeaway
@@ -55,3 +60,7 @@ This lab demonstrates how sign-in logs are used to investigate authentication is
 - Microsoft Entra ID monitoring
 - Authentication troubleshooting
 - Analytical thinking and problem-solving
+
+### Security Insight
+
+Sign-in logs are a critical tool for distinguishing between authentication failures and user-side issues, enabling faster and more accurate incident resolution.
