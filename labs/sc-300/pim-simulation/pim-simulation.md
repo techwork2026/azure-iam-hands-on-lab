@@ -1,6 +1,8 @@
-# Privileged Identity Management (PIM) Simulation
+# Privileged Identity Management (PIM) Simulation — Microsoft Entra ID
 
 ## Objective
+This simulation reflects enterprise IAM practices where privileged access is controlled, monitored, and granted only when required.
+
 Simulate Privileged Identity Management (PIM) in Microsoft Entra ID to demonstrate how organizations secure administrative access using just-in-time (JIT) role activation.
 
 ---
@@ -113,26 +115,11 @@ Privileged Identity Management (PIM) requires a Microsoft Entra ID P2 or Governa
 Due to this limitation, direct configuration of eligible role assignments and just-in-time activation could not be performed.
 
 However, the current RBAC configuration was analyzed, and a secure PIM-based access model was designed and documented to demonstrate how privileged access would be implemented in a real-world enterprise environment.
+---
+
 ### PIM License Restriction
 ![PIM License Restriction](/screenshots/pim-license-restriction.png)
 
-### Risk:
-- Permanent admin access increases the risk of account compromise  
-- No tracking or approval for privileged actions  
-- Violates least privilege principle  
-
-### PIM Solution:
-- Admin users are assigned as **eligible** instead of active  
-- Access must be requested and justified  
-- Access is granted temporarily (e.g., 1 hour)  
-- All activation activity is logged for auditing  
-
-### Outcome:
-- Reduced attack surface  
-- Improved security monitoring  
-- Enforced least privilege  
-- Better compliance and audit readiness  
----
 
 ## Skills Demonstrated
 
