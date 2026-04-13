@@ -116,7 +116,7 @@ Due to this limitation, direct configuration of eligible role assignments and ju
 
 However, the current RBAC configuration was analyzed, and a secure PIM-based access model was designed and documented to demonstrate how privileged access would be implemented in a real-world enterprise environment.
 ### PIM License Restriction
-![PIM License Restriction](../../screenshots/sc-300/pim-simulation/pim-license-restriction.png)
+![PIM License Restriction](/screenshots/pim-license-restriction.png)
 
 ### Risk:
 - Permanent admin access increases the risk of account compromise  
