@@ -114,6 +114,28 @@ PIM features were not available due to licensing restrictions in the lab environ
 
 This simulation demonstrates how privileged access would be securely implemented in a real-world environment.
 
+## Enterprise Scenario Example
+
+A company has 50 employees across IT, HR, and Finance departments.
+
+Previously, IT administrators were assigned permanent roles such as **User Administrator**, giving them continuous elevated access.
+
+### Risk:
+- Permanent admin access increases the risk of account compromise  
+- No tracking or approval for privileged actions  
+- Violates least privilege principle  
+
+### PIM Solution:
+- Admin users are assigned as **eligible** instead of active  
+- Access must be requested and justified  
+- Access is granted temporarily (e.g., 1 hour)  
+- All activation activity is logged for auditing  
+
+### Outcome:
+- Reduced attack surface  
+- Improved security monitoring  
+- Enforced least privilege  
+- Better compliance and audit readiness  
 ---
 
 ## Skills Demonstrated
@@ -121,4 +143,10 @@ This simulation demonstrates how privileged access would be securely implemented
 - Identity and Access Management (IAM)  
 - RBAC vs PIM understanding  
 - Security risk analysis  
-- Privileged access concepts  
+- Privileged access concepts
+
+## Security Insight
+
+Privileged accounts are a primary target in cyberattacks.
+
+By eliminating standing administrative access and requiring just-in-time activation, PIM significantly reduces the risk of unauthorized access and limits the impact of compromised credentials.
