@@ -148,3 +148,16 @@ However, the current RBAC configuration was analyzed, and a secure PIM-based acc
 Privileged accounts are a primary target in cyberattacks.
 
 By eliminating standing administrative access and requiring just-in-time activation, PIM significantly reduces the risk of unauthorized access and limits the impact of compromised credentials.
+## Screenshots
+
+### Current RBAC Role Assignment
+![RBAC Role](/screenshots/current-rbac-role-assignment.png)
+
+### User Administrator Role Assignments
+![Role Page](/screenshots/user-administrator-role-page.png)
+
+### PIM Entry Point
+![PIM Entry](/screenshots/pim-entry-point.png)
+
+### PIM License Restriction
+![PIM License](/screenshots/pim-license-restriction.png)
